@@ -1,0 +1,112 @@
+[
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "rating": 95,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Orthodox",
+    "price": "$2000000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 90,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": "$1800000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Liton Das",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 88,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": "$1500000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 89,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": "$1600000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Mahmudullah",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "rating": 87,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off Spin",
+    "price": "$1400000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Mehedi Hasan Miraz",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "rating": 86,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off Spin",
+    "price": "$1300000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "rating": 88,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm Fast Medium",
+    "price": "$1700000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "rating": 85,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Fast",
+    "price": "$1200000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Najmul Hossain Shanto",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 84,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": "$1100000",
+    "action": "Choose Player"
+  },
+  {
+    "image" : "https://i.ibb.co.com/qYGzwRv1/Rectangle-2.png",
+    "name": "Towhid Hridoy",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 83,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": "$1000000",
+    "action": "Choose Player"
+  }
+]
