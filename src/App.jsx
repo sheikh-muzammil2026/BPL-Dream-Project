@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='container mx-auto'>
      <Navbar></Navbar>
-     {/* <Hero></Hero> */}
+     <Hero></Hero>
      <Main></Main>
     </div>
   )

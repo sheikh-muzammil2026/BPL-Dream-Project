@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className='shadow-md flex justify-between p-4 mt-4'>
             <img className='max-w-[76px]' src={logo} alt="" />
             <div className='flex gap-2.5 items-center'>
-                <ul className='flex gap-2'>
+                <ul className='hidden md:flex gap-2'>
                     <li><a href='#'>home</a></li>
                     <li><a href='#'>Fixture</a></li>
                     <li><a href='#'>Teams</a></li>
