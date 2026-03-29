@@ -25,5 +25,5 @@ export default Main;
 
 
 /**
- * main theke player send korbo playerCard .and selected card e . 
+ * main theke player send korbo playerCard .and selected card e . by default playerCard khali [] pabe.useState 
  * */ 
