@@ -9,13 +9,16 @@ const playersPromisRes = async() => {
 const playersPromise = playersPromisRes();
 
 
-const PlayersCard = () => {
+const PlayersCard = ({coin, setCoin}) => {
     const playersData = use(playersPromise);
-    console.log(playersData);
+    // console.log(playersData);
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2.5'>
             {
-                playersData.map((player, index) => <Card key={index} player={player}></Card>  )
+                playersData.map((player, index) => 
+                <Card 
+               coin={coin} setCoin={setCoin}
+                key={index} player={player}></Card>  )
             }
         </div>
     );

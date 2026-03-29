@@ -1,8 +1,11 @@
 import { Flag, User } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 
-const Card = ({player}) => {
-    const {image, name, country, role, rating, battingStyle, bowlingStyle, price, action} = player;
+const Card = ({player, coin, setCoin}) => {
+    const {image, name, country, role, rating, battingStyle, bowlingStyle, price} = player;
+    const [selected, setSelected] = useState(false);
+    
+
     return (
         <div className='shadow-md p-4 flex flex-col gap-4'>
             <img className='w-full h-[150px]' src={image} alt="" />
@@ -19,8 +22,19 @@ const Card = ({player}) => {
             <p>{bowlingStyle}</p>
             </div>
             <div className='flex justify-between'>
-                <p className='font-bold'>{price}</p>
-                <button className="btn">{action}</button>
+                <p className='font-bold'>${price}</p>
+                <button  onClick={() => {
+                   if(coin < price){
+                   return alert("Not enough coin")
+                    
+                   } else{
+                    setCoin(coin - price)
+                    setSelected(!selected)
+                   } 
+                    }}
+                    className="btn" disabled={selected} >
+                    {selected ? "selected" : "Choose player"} </button>
+                
             </div>
         </div>
     );

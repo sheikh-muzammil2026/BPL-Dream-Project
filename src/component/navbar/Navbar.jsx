@@ -2,7 +2,8 @@ import React from 'react';
 import dollar from '../../assets/dollar-1.png';
 import logo from '../../assets/logo.png';
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
+    // console.log(coin, setCoin)
     return (
         <div className='shadow-md flex justify-between p-4 mt-4'>
             <img className='max-w-[76px]' src={logo} alt="" />
@@ -13,7 +14,7 @@ const Navbar = () => {
                     <li><a href='#'>Teams</a></li>
                     <li><a href='#'>Schedules</a></li>
                 </ul>
-                <button className='btn font-bold'>0 Coin<img src={dollar} alt="dollar icon" /></button>
+                <button className='btn font-bold'>{coin} Coin<img src={dollar} alt="dollar icon" /></button>
             </div>
         </div>
     );
