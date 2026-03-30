@@ -1,7 +1,7 @@
 import { Flag, User } from 'lucide-react';
 import React, { useState } from 'react';
 
-const Card = ({player, coin, setCoin}) => {
+const Card = ({player, coin, setCoin,selectedPlayers, setSelectedPlayers}) => {
     const {image, name, country, role, rating, battingStyle, bowlingStyle, price} = player;
     const [selected, setSelected] = useState(false);
     
@@ -30,9 +30,10 @@ const Card = ({player, coin, setCoin}) => {
                    } else{
                     setCoin(coin - price)
                     setSelected(!selected)
+                    setSelectedPlayers([...selectedPlayers, player ])
                    } 
                     }}
-                    className="btn" disabled={selected} >
+                    className="btn" disabled={true} >
                     {selected ? "selected" : "Choose player"} </button>
                 
             </div>

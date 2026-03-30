@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import PlayersCard from './playersCard';
 import SelectedPlayers from './SelectedPlayers';
 
+const playersPromisRes = async() => {
+    const res = await fetch('/playersData.json');
+    return res.json();
+}
+
+const playersPromise = playersPromisRes();
+
+
 const Main = ({coin, setCoin}) => {
-    console.log(coin, setCoin)
+     const playersData = use(playersPromise);
+
+    const [selectedPlayers, setSelectedPlayers ] = useState([]);
+    // console.log(coin, setCoin)
     const [selectedBtn, setSelectedBtn] = useState("available");
     return (
        <>
@@ -15,7 +26,9 @@ const Main = ({coin, setCoin}) => {
            </div>
         </div>
         {
-            selectedBtn === "available" ? <PlayersCard coin={coin} setCoin={setCoin}></PlayersCard> : <SelectedPlayers></SelectedPlayers>
+            selectedBtn === "available" ? 
+            <PlayersCard playersData={playersData} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} coin={coin} setCoin={setCoin}></PlayersCard > 
+            : <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}></SelectedPlayers>
         }
        </>
     );

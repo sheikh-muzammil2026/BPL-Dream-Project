@@ -1,22 +1,17 @@
 import React, { use } from 'react';
 import Card from './card';
 
-const playersPromisRes = async() => {
-    const res = await fetch('/playersData.json');
-    return res.json();
-}
 
-const playersPromise = playersPromisRes();
-
-
-const PlayersCard = ({coin, setCoin}) => {
-    const playersData = use(playersPromise);
-    // console.log(playersData);
+const PlayersCard = ({playersData, coin, setCoin, selectedPlayers, setSelectedPlayers}) => {
+   
+   
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2.5'>
             {
                 playersData.map((player, index) => 
                 <Card 
+                selectedPlayers={selectedPlayers}
+                setSelectedPlayers={setSelectedPlayers}
                coin={coin} setCoin={setCoin}
                 key={index} player={player}></Card>  )
             }
